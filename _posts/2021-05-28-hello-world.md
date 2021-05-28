@@ -7,5 +7,5 @@ keywords: presentation, off-topic
 ---
 
 ```typescript
-Hello world!
+console.log(`Hello world ${visitor.name}!`)
 ```
