@@ -21,6 +21,8 @@ social:
 # rss: "/feed.xml"
 
 # Jekyll Settings
+markdown: kramdown
+permalink: /blog/:title:output_ext
 timezone: Europe/Madrid
 excerpt_separator: <!--more-->
 defaults:
