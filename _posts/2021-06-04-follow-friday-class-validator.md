@@ -1,5 +1,5 @@
 ---
-title: FFP :: Class validator
+title: FFP - Class validator
 date: 2021-06-03 08:00:00 +02:00
 code: true
 category: follow friday project
