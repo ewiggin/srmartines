@@ -3,8 +3,14 @@ title: Cómo usar correctamente defensivas en tu codigo
 date: 2022-04-06 16:54:00 +01:00
 code: true
 category: off-topic
-keywords: off-topic, code, best-practices
+keywords: off-topic, code, best practices, typescript
 ---
+
+No importa el codigo, lo importante es que funcione. Error. Es el principio de un mal diseño, un mal codigo y un paraíso para los bugs. Aunque pudieras presentar una demo con este razonamiento, no podrás escalar de forma adecuada y hacer de tu producto una estrella.
+
+Unos pequeños consejos para mejorar tu código de forma sencilla pero efectiva.
+
+<!--more-->
 
 ## ¿Qué tipo de orador eres?
 
