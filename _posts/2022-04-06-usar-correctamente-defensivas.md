@@ -133,13 +133,41 @@ function isAdmin(user): boolean {
 
 ### Short circuit evaluation
 
+Una ultima manera con la que podemos defender y agilizar nuestro codigo es usando el `short circuit`. 
+Se trata de asignar un valor haciendo un circuito conectado por operadores logicos AND y OR, esto nos permite
+usar booleanos para defender el codigo, usar valores por defecto en caso de ser `undefined` o `null`.
+
+A continuación varios ejemplos:
+
+#### Usar valores por defecto
+
+```typescript
+const userRoles = undefined;
+const role = userRole || 'no-role'; 
+// Resultado: `role` es 'no-role'
+```
+En este simple ejemplo usando el operador OR cuando asignamos una variable, podemos conseguir que en 
+caso de que el valor que queramos asignar es `falsy` (0, undefined, null) se asignará el siguiente valor 
+no `falsy`, en este caso `'no-role'`.
+
+#### Comprovaciones en cadena
+
+Además de asignar valores a las variables, podemos usar booleans para poder hacer comprovaciones y evitarnos
+algunos `ifs`.
+
+A continuación dos ejemplos:
+
+```typescript
+// AND circuit (devuelve el primer Falsy que encuentra o el ultimo valor)
+const isAdmin = user && user.id && user.role === 'Admin'
+
+// OR circuit (asigna el primer valor que sea truthy)
+const notAdmin = !user || !user.id || user.role !== 'Admin' 
+// en este caso como lo estamos negando se convierten en boleans
+```
+
+Referencias:
+
 - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)
 - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)
 
-```typescript
-// AND circuit (asigna el ultimo valor que sea TRUE, o el ultimo valor)
-const isAdmin = user && user.id && user.role === 'Admin'
-
-// OR circuit (asigna el primer valor que sea TRUE, o el ultimo)
-const notAdmin = !user || !user.id || user.role !== 'Admin' 
-```
