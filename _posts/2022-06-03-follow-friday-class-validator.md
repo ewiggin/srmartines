@@ -1,20 +1,20 @@
 ---
 title: FFP - Class validator
-date: 2021-06-03 08:00:00 +02:00
+date: 2022-06-03 08:00:00 +02:00
 code: true
 category: follow friday project
 keywords: typescript, javascript, oop, follow friday project
 ---
 
-Every friday I will share an awesome project or service.
+Cada viernes comparto algún recurso interesante que ehe encuentro por la red. Sobretodo enfocado al desarrollo.
 
-This friday I will share **[class-validator](https://github.com/typestack/class-validator)**.
+Este viernes quiere compartir **[class-validator](https://github.com/typestack/class-validator)**.
 
-This project "allows use of decorator and non-decorator based validation. Internally uses validator.js to perform validation. Class-validator works on both browser and node.js platforms."
+Este proyecto "permite el uso de la validación a partir de decoradores (o no). Utiliza internamente Validator.js para realizar la validación. Class-Validator funciona tanto en las plataformas de navegador como en Node.js".
 
 <!--more-->
 
-## Installation
+## Instalación
 
 ```
 npm install class-validator --save
@@ -22,9 +22,9 @@ npm install class-validator --save
 
 > Note: Please use at least npm@6 when using class-validator. From npm@6 the dependency tree is flattened, which is required by `class-validator` to function properly.
 
-## Usage
+## Uso
 
-Create your class and put some validation decorators on the properties you want to validate:
+Cree su clase y coloque algunos decoradores de validación en las propiedades que desea validar:
 
 ```typescript
 import {
@@ -91,4 +91,4 @@ async function validateOrRejectExample(input) {
 }
 ```
 
-For more documentation please visit the original project on [github repo](https://github.com/typestack/class-validator).
+Para más info, visita el proyecto original en [github repo](https://github.com/typestack/class-validator).
