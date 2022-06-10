@@ -1,5 +1,5 @@
 ---
-title: FFP - Class validator
+title: Validación de datos fácil
 date: 2022-06-03 08:00:00 +02:00
 code: true
 category: follow friday project
